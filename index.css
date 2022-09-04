@@ -1,0 +1,161 @@
+:root {
+  --color-dark-blue: #1a191d;
+  --color-blue: #65d6ea;
+  --color-dark-grey: #2e2e2e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-dark-blue);
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-dark-blue);
+  border-top: 5px solid var(--color-blue);
+}
+
+.navbar {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  font-size: 1.25em;
+}
+
+.navbar-logo:hover {
+  color: var(--color-blue);
+}
+
+.menu-icon {
+  font-size: 1.25em;
+  cursor: pointer;
+  z-index: 10;
+}
+.navbar-menu {
+  background-color: var(--color-dark-blue);
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 425px;
+  margin: 0 auto;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.navbar-dropdown {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.navbar-menu-item {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+  padding:30px 0;
+  height: 100px;
+}
+
+.navbar-menu-item:hover {
+  background-color: #131215;
+}
+
+.home-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.home-introduction {
+  text-align: center;
+}
+
+.home-picture img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.home-button {
+  display: block;
+  border: 2px solid white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--color-blue);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.social-media-container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.social-media {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-media-item {
+  display: block;
+}
+
+.social-media-item img {
+  width: 50px;
+}
+
+.footer-container {
+  text-align: center;
+}
+
+@media (min-width: 426px) {
+  
+}
+@media (min-width: 769px) {}
+@media (min-width: 1025px) {}
