@@ -16,8 +16,13 @@ body {
   background-color: var(--color-dark-blue);
 }
 
+.denny-name {
+  color: var(--color-blue);
+  font-family: "Poppins", sans-serif;
+}
+
 .font-poppins {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -52,7 +57,7 @@ body {
 }
 
 .navbar-logo {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
   font-size: 1.25em;
 }
@@ -86,16 +91,16 @@ body {
   display: block;
   text-decoration: none;
   width: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.5em;
   text-align: center;
   font-weight: bold;
-  padding:30px 0;
+  padding: 30px 0;
   height: 100px;
 }
 
 .navbar-menu-item:hover {
-  background-color: #131215;
+  color: var(--color-blue);
 }
 
 .home-container {
@@ -119,8 +124,11 @@ body {
   border-radius: 50%;
 }
 
+.home-button-container {
+  margin: 50px 0 20px 0;
+}
+
 .home-button {
-  display: block;
   border: 2px solid white;
   padding: 5px 10px;
   border-radius: 5px;
@@ -155,7 +163,95 @@ body {
 }
 
 @media (min-width: 426px) {
-  
+  .container {
+    max-width: 700px;
+    /* border: 2px solid #fff; */
+  }
+
+  .navbar {
+    max-width: 700px;
+    justify-content: space-between;
+  }
+
+  .navbar-menu {
+    width: 769px;
+  }
+
+  .home-container {
+    max-width: 700px;
+  }
+
+  .home-introduction {
+    width: 550px;
+  }
 }
-@media (min-width: 769px) {}
-@media (min-width: 1025px) {}
+
+@media (min-width: 769px) {
+  .container {
+    max-width: 1000px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .home-container, .navbar {
+    max-width: 1000px;
+  }
+
+  .home {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .home h1, .home p {
+    text-align: start;
+  }
+
+  .home-button-container {
+    margin-top: 20px;
+    text-align: start;
+  }
+
+  .font-poppins {
+    font-size: 2em;
+    font-weight: 700;
+  }
+
+  h2.font-poppins {
+    margin: 50px 0;
+  }
+
+  .social-media {
+    justify-content: space-between;
+    /* border: 2px solid #fff; */
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .footer-container {
+    margin-top: 200px;
+  }
+
+  .navbar-menu {
+    position: static;
+    clip-path: unset;
+    max-width: fit-content;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar-logo {
+    font-size: 1em;
+  }
+
+  .navbar-menu-item {
+    display: unset;
+    font-weight: normal;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+  }
+}
