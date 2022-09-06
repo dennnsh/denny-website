@@ -116,6 +116,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 2em;
+  padding: 0 30px;
 }
 
 .home-introduction {
@@ -266,7 +267,7 @@ span a {
 
 .tags-item {
   background-color: var(--color-dark-grey);
-  padding: 5px 20px;
+  padding: 5px 10px;
 }
 
 .project-detail {
@@ -317,7 +318,7 @@ span a {
   }
 
   .home-introduction {
-    width: 550px;
+    width: 100%;
   }
 
   /* About */
@@ -330,6 +331,7 @@ span a {
 @media (min-width: 769px) {
   .container {
     max-width: 1000px;
+    padding: 0;
   }
 
   .menu-icon {
@@ -340,10 +342,15 @@ span a {
     max-width: 1000px;
   }
 
+  .home-introduction {
+    padding: 0;
+  }
+
   .home {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 0 30px;
   }
 
   .home h1, .home p {
