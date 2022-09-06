@@ -28,10 +28,12 @@ body {
 .container {
   width: 100%;
   max-width: 400px;
+  min-width: 300px;
   height: 100vh;
   margin: 0 auto;
   display: flex;
   align-items: center;
+  padding: 0 30px;
 }
 
 .navbar-container {
@@ -54,6 +56,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 30px;
 }
 
 .navbar-logo {
@@ -78,7 +81,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  width: 425px;
+  width: 100%;
   margin: 0 auto;
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
@@ -179,6 +182,7 @@ span a {
   width: 100%;
   max-width: 400px;
   min-width: 300px;
+  padding: 0 30px;
 }
 
 .about-title {
@@ -218,6 +222,82 @@ span a {
   margin-bottom: 20px;
 }
 
+/* Projects */
+
+.projects-wrapper {
+  width: 100%;
+  max-width: 400px;
+  min-width: 300px;
+  margin: 100px auto;
+  padding: 0 30px;
+}
+
+.projects {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  gap: 50px;
+}
+
+.project {
+  min-height: 300px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+.project-header {
+  color: var(--color-blue);
+}
+
+.project-works {
+  margin-bottom: 50px;
+}
+
+.project-image-item {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.tags {
+  font-size: 0.8em;
+  margin: 10px;
+}
+
+.tags-item {
+  background-color: var(--color-dark-grey);
+  padding: 5px 20px;
+}
+
+.project-detail {
+  /* border: 2px solid #fff; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  height: 150px;
+}
+
+.project-title {
+  font-size: 1.5em;
+}
+
+.demo-button, .code-button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #000;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.demo-button {
+  background-color: var(--color-blue);
+}
+
+.code-button {
+  background-color: #fff;
+}
 @media (min-width: 426px) {
   .container {
     max-width: 700px;
@@ -229,7 +309,7 @@ span a {
   }
 
   .navbar-menu {
-    width: 769px;
+    width: 100%;
   }
 
   .home-container {
@@ -335,6 +415,7 @@ span a {
 
   .about-description {
     max-width: 600px;
+    margin-right: 30px;
   }
 
   .profile {
@@ -345,5 +426,16 @@ span a {
 
   .uses-container {
     margin: 50px 0;
+  }
+
+  /* Projects */
+
+  .projects-wrapper {
+    max-width: 1000px;
+
+  }
+  .projects {
+    grid-template-columns: auto auto auto;
+    gap: 20px;
   }
 }
