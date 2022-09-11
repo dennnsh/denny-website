@@ -1,6 +1,6 @@
 # Denny Setyawan Huda Website
 
-> Link: https://dennsh.com/
+> Link: https://dennysh.com/
 
 > Demo: https://denny-website.vercel.app/
 
@@ -65,13 +65,13 @@ Figma: [https://www.figma.com/file/roEh9hijOh0EE604l4F9AY/dennsh.me](https://www
 HTTPS:
 
 ```https
-git clone https://github.com/dennnsh/dennsh-web.git
+git clone https://github.com/dennyshuda/denny-website.git
 ```
 
 SSH:
 
 ```ssh
-git clone git@github.com:dennnsh/dennsh-web.git
+git clone git@github.com:dennyshuda/denny-website.git
 ```
 
 - Add or remove images from `assets/` directory as per your requirement
